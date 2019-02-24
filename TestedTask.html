@@ -1,0 +1,109 @@
+﻿
+<head>
+	<meta http-equiv="Content-Type" content="text/html" />
+		<!-- charset="Utf-8" -->
+	<title>Тест. Тема 1</title>
+		<script language="JavaScript">
+			<!-- 
+			function dataBase(test) {
+				 var counter=0;
+				 if (test.q11.checked && test.q12.checked && test.q13.checked && !test.q14.checked) {counter++;} /* Для checkbox, если "test"=true, "!test"=false */
+				 if (test.q2[0].checked) {counter++;}  /* Для radio, q2[!от 0 до "N-1"!], где N - количество ответов*/
+				 
+				 document.test.display.value = counter;
+				 
+				 if (counter<=2) otvet= "Комент 1";  /* комент для оценки ниже 2 */
+				 else if (counter<=4) otvet= "Комент 2";
+				 else if (counter<=10) otvet= "Комент 3";
+				 else  otvet= "Комент 4";
+				 otvet = otvet + "\nВаша оценка: " + counter + ".\nМаксимальная оценка: n балов.";
+				 alert(otvet);
+			}
+			var p = "eu_Tests/test_os.htm";
+			var n = "eu_Tests/test_win.htm";
+			// -->
+		</script>
+ 	<style>
+	   i {
+		background: #808080; 
+		color: black; 
+		padding: 10px; 
+		font-family: Verdana;
+	   }
+	   body {
+		background-color: #009900;
+	</style>
+ </head>
+<body>
+	<form method="post" name="test"> 
+		<center> 
+			<h1>Тест. Тема 1</h1>
+				<hr width="100%"> 
+					<h4>
+						<i>Выберите один или несколько правильных ответов</i>
+					</h4>
+				<hr> 
+		</center>
+			<h3 align="left"> 1. Вопрос 1:</h3>
+	<center> 
+		<div align="left">  
+			<p style="margin-left: 50">
+				<strong> 
+					<input name="q11" type="checkbox" value="11">Ответ 1<br> 
+					<input name="q12" type="checkbox" value="12">Ответ 2<br> 
+					<input name="q13" type="checkbox" value="13">Ответ 3<br> 
+					<input name="q14" type="checkbox" value="14">Ответ 4<br> 
+				</strong>
+			</p>
+		</div>
+<hr> 
+	</center>
+<h3 align="left">2. Вопрос 2:</h3>
+	<center> 
+		<div align="left">
+			<p style="margin-left: 50">
+				<strong> 
+					<input name="q2" type="radio" value="21">Ответ 1<br> 
+					<input name="q2" type="radio" value="22">Ответ 2<br> 
+					<input name="q2" type="radio" value="23">Ответ 3<br>
+					<input name="q2" type="radio" value="23">Ответ 4<br> 	
+				</strong>
+			</p>
+		</div>
+<hr>  
+<table> 
+	<tbody>
+		<tr> 
+			<td colspan="3">
+
+				<div align="center">	
+<br>
+	<hr>
+		<strong>Нажмите кнопку для завершения теста:</strong> 
+				</div>
+			</td>
+		</tr> 
+		
+<tr align="center"> 
+	<td>
+		<strong>
+			<input name="check" onclick="dataBase(this.form)" type="button" value=" Подсчитать баллы ">
+		</strong>
+	</td>	
+		<td>
+			<strong>
+				<textarea cols="5" name="display" rows="1" wrap="VIRTUAL" disabled></textarea>
+			</strong>
+		</td>		
+	<td>
+		<strong>
+			<input type="reset" value=" Отменить Ответы ">
+		</strong>
+	</td>
+</tr> 
+	</tbody>
+</table>
+	</center>
+		</form>         
+</body>
+</html>
